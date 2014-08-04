@@ -1,0 +1,21 @@
+<?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
+$lang['home']='บ้าน';
+$lang['training']='การอบรม';
+$lang['news']='ข่าว';
+$lang['videos']='วิดีโอ';
+$lang['seminar']='การสัมมนา';
+$lang['trade']='ค้า';
+$lang['forex_trading_social']='Forex Trading Social';
+$lang['forum']='ฟอรั่ม';
+$lang['contact_us']='ติดต่อเรา';
+$lang['head_training']='มีความสุขการฝึกอบรมไทย FOREX';
+$lang['head_news']='แฮปปี้ FOREX ข่าวไทย';
+$lang['head_videos']='แฮปปี้วิดีโอไทย FOREX';
+$lang['head_seminars']='แฮปปี้สัมมนาไทย FOREX';
+$lang['head_trade']='มีความสุขการค้าไทย FOREX';
+$lang['login']='เข้าสู่ระบบ';
+$lang['register']='การลงทะเบียน';
+$lang['disclaimer']='คำปฏิเสธ';
+$lang['privacy_policy']='นโยบายความเป็นส่วนตัว';
+$lang['terms']='แง่';
+/* End of file menu_lang.php */

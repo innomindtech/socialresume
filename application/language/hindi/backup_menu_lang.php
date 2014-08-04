@@ -1,0 +1,22 @@
+<?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
+$lang['home']='घर';
+$lang['training']='प्रशिक्षण';
+$lang['news']='समाचार';
+$lang['videos']='वीडियो';
+$lang['seminar']='संगोष्ठी';
+$lang['trade']='व्यापार';
+$lang['forex_trading_social']='विदेशी मुद्रा व्यापार सामाजिक';
+$lang['forum']='फोरम';
+$lang['contact_us']=' हमसे संपर्क करें';
+$lang['head_training']=' खुश थाईलैंड के विदेशी मुद्रा प्रशिक्षण';
+$lang['head_news']='खुश थाईलैंड के विदेशी मुद्रा समाचार';
+$lang['head_videos']='खुश थाईलैंड के विदेशी मुद्रा वीडियो';
+$lang['head_seminars']='खुश थाईलैंड के विदेशी मुद्रा सेमिनार';
+$lang['head_trade']='खुश थाईलैंड के विदेशी मुद्रा व्यापार';
+$lang['login']='लॉगिन';
+$lang['register']='रजिस्टर';
+$lang['disclaimer']='त्याग';
+$lang['privacy_policy']='गोपनीयता नीति';
+$lang['terms']='शर्तें';
+$lang['conditions']='स्थितियां';
+/* End of file menu_lang.php */

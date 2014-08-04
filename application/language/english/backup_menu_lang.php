@@ -1,0 +1,21 @@
+<?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
+$lang['home']='home';
+$lang['training']='Training';
+$lang['news']='News';
+$lang['videos']='Videos';
+$lang['seminar']='Seminar';
+$lang['trade']='Trade';
+$lang['forex_trading_social']='Forex Trading Social';
+$lang['forum']='Forum';
+$lang['contact_us']='Contac Us';
+$lang['head_training']='HAPPY THAI FOREX TRAINING';
+$lang['head_news']='HAPPY THAI FOREX NEWS';
+$lang['head_videos']='HAPPY THAI FOREX VIDEOS';
+$lang['head_seminars']='HAPPY THAI FOREX SEMINARS';
+$lang['head_trade']='HAPPY THAI FOREX TRADE';
+$lang['login']='Login';
+$lang['register']='Register';
+$lang['disclaimer']='Disclaimer';
+$lang['privacy_policy']='Privacy Policy';
+$lang['terms']='Terms';
+/* End of file menu_lang.php */

@@ -1,0 +1,25 @@
+<?php  if (!defined('BASEPATH')) exit('No direct script access allowed');
+$lang['register_now']='ลงทะเบียนตอนนี้';
+$lang['read_all']='อ่านข่าวทั้งหมด';
+$lang['news_categories']='หมวดหมู่ข่าว';
+$lang['no_of_clients']='จำนวนของลูกค้าทั่วโลกที่มีการซื้อขาย Happy Thai Forex';
+$lang['share_on']='ร่วมกันบน';
+$lang['subscribe']='สมัครสมาชิก';
+$lang['newsletter_head']='เพื่อลงทะเบียนรับจดหมายข่าวของเรากรุณากรอกที่อยู่อีเมลของคุณด้านล่าง';
+$lang['upcoming_seminars']='การสัมมนาที่จะเกิดขึ้น';
+$lang['price']='ราคา';
+$lang['date']='วันที่';
+$lang['register_now']='ลงทะเบียนตอนนี้';
+$lang['registration_form']='แบบฟอร์มลงทะเบียนสัมมนา';
+$lang['select_seminar']='เลือกสัมมนา';
+$lang['full_name']='ชื่อเต็ม';
+$lang['email_address']='ที่อยู่อีเมล์';
+$lang['telephone']='โทรศัพท์';
+$lang['apply_now']='สมัครวันนี้';
+$lang['posted_on']='โพสต์เมื่อวันที่';
+$lang['no_news']='ไม่มีข่าวในหมวดนี้';
+$lang['no_seminars']='ขออภัยไม่มีการสัมมนาที่กำลังจะมา';
+$lang['other_news']='ข่าวอื่น ๆ ในหมวดนี้';
+$lang['free']='ฟรี';
+$lang['chapters']='บทที่';
+/* End of file menu_lang.php */

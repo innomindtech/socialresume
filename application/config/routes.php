@@ -40,8 +40,12 @@
 
 $route['default_controller'] 	= "index";
 $route['404_override'] 			= '';
+$route['login']             		= "index/index";
+ 
+$route['dashboard']             		= "index/dashboard";
+$route['writeentry']             		= "index/writeentry";
+$route['writeentry/(:any)']             		= "index/writeentry/$1";
 
-$route['sell']             		= "index/sell";
  
 
  

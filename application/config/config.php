@@ -57,10 +57,10 @@ $config['language']	= '';
 			define('MYSQL_HOST', 'localhost');
 			define('MYSQL_USERNAME', 'root');
 			define('MYSQL_PASSWORD', '');
-			define('MYSQL_DB', 'sonnet');
+			define('MYSQL_DB', 'socialresume');
 			define('MYSQL_TABLE_PREFIX', 'tbl_');
-			define('FILE_UPLOAD_DIR',  "D:/wamp/www/projects/framework/files");
-			define('SITEPATH',  "D:/wamp/www/projects/framework/");
+			define('FILE_UPLOAD_DIR',  "D:/wamp/www/projects/socialresume/files");
+			define('SITEPATH',  "D:/wamp/www/projects/socialresume/");
 	 	}
 	 	else if (SITEMODE == 'DEMO') {
 	 	  	$config['base_url']	= '';

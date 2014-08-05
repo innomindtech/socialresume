@@ -19,7 +19,9 @@
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
+	<script src="<?php echo BASE_URL; ?>application/helpers/js/jquery.validate.js"></script>
+	
+		<script src="<?php echo BASE_URL; ?>application/helpers/js/validations.js"></script>
  
 <script language="javascript">
 var BASE_URL = "<?php echo BASE_URL;?>";

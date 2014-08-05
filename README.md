@@ -1,4 +1,3 @@
-thornproof
+assignment / coding challenge
 ==========
 
-Thornproof : the online shopping cart

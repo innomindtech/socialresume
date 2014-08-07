@@ -1,11 +1,18 @@
  
-Write entry for the user
- <hr>
 
  
+
+ 	<h1>Write entry for the user</h1>
+ <div class="row">
+        <div class="col-sm-6">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"> Write your entry for  <?php echo $requesterEmail; ?></h3>
+            </div>
+            <div class="panel-body">
+			
  <form class="cmxform" id="frmaddentry" method="post" action="">
-		<fieldset>
-			<legend>Write your entry for  <?php echo $requesterEmail; ?></legend>
+	 
 			 <?php echo $message; ?>
 			<p>
 				 
@@ -14,8 +21,14 @@ Write entry for the user
 				<input class="submit" type="submit" value="Submit" name="btnsubmit">
 			</p>
 			 
-			<p>
-				
-			</p>
-		</fieldset>
+			 
+		 
 	</form>
+	
+	</div>
+          </div>
+          
+        </div><!-- /.col-sm-4 -->
+         
+        
+      </div>

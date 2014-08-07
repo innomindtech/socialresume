@@ -38,15 +38,15 @@
 |
 */
 
-$route['default_controller'] 	= "index";
-$route['404_override'] 			= '';
+$route['default_controller'] 		= "index";
+$route['404_override'] 				= 'index/pagenotfound';
 $route['login']             		= "index/index";
  
-$route['dashboard']             		= "index/dashboard";
-$route['writeentry']             		= "index/writeentry";
-$route['writeentry/(:any)']             		= "index/writeentry/$1";
-
- 
+$route['dashboard']             	= "index/dashboard";
+$route['writeentry']             	= "index/writeentry";
+$route['writeentry/(:any)']         = "index/writeentry/$1";
+$route['entry/(:any)/(:any)']       = "index/entry/$1/$2";
+$route['logout']             		= "index/logout";
 
  
 $route['fw']             	= "fw/index";

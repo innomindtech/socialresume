@@ -26,7 +26,6 @@ class User {
 			return 0;
 		}
 		else {
-			 
 			$db 		= new Db();
 			$condition 	= "u_email ='".$uanme."' AND u_pwd ='".$upwd."'";
             $userInfo 	= $db->selectRecord('user', '*',$condition );
@@ -35,6 +34,20 @@ class User {
 		}
 		
 	}
+	
+	
+	/*
+	 *	function to store the user email details in DB
+	 */	
+	public static function addUser($data) {
+		 
+		$db 		= new Db();
+		$uId	= $db->addFields('user',$data);
+		return $uId;
+	}	
+		  
+	
+	
 		  
 	/*
 	 *	function to store the user email details in DB
@@ -59,6 +72,74 @@ class User {
 		}
 	}	
 
+	/*
+	 *	function to add user comment into database
+	 */
+	public static function addUserComment($data) {
+		$data['u_postedon'] 	= date('Y-m-d H:i:s');
+		$db 					= new Db();
+		$commentId				= $db->addFields('entry',$data);
+		return $commentId;
+	}
+	
+	
+	/*
+	 *	function to get the entry list for the user
+	 */
+	public static function getEntryList($userid) {
+		if(!empty($userid)) {
+			$db 		= new Db();
+			$condition 	= "E.u_id ='".$userid."'";
+            $eventList 	= $db->selectResult('entry AS E LEFT JOIN tbl_user AS U ON U.u_id=E.u_poster_id ', 'E.*,U.u_email ',$condition );
+            return $eventList;
+		}
+	}
     
+	/*
+	 *	function to get the details of a particular entry
+	 */
+	public static function getEntryInfo($entryId) {
+		if(!empty($entryId)) {
+			$db 		= new Db();
+			$condition 	= "E.e_id ='".$entryId."'";
+            $eventInfo 	= $db->selectRecord('entry AS E LEFT JOIN tbl_user AS U ON U.u_id=E.u_poster_id ', 'E.*,U.u_email ',$condition );
+            return $eventInfo;
+		}
+	}
+	
+	
+	/*
+	 *	function to delete an entry of a user
+	 */
+	public static function deleteEntry($eid, $userid) {
+		if($eid != '' && $userid != '') {
+			// check the entry exist with user
+			$db 		= new Db();
+			$condition 	= "E.e_id ='".$eid."' AND u_id =".$userid;
+            $entryInfo 	= $db->selectRecord('entry AS E', 'E.e_id ',$condition );
+			
+			if(sizeof($entryInfo) > 0 ){	// yes, the entry exist. we will delete the entry
+				$condition 	= "e_id ='".$eid."'";
+				$delStatus 	= $db->deleteRecord('entry',$condition );
+				return true;
+			}
+			
+		}
+	}
+	
+	
+	/*
+	 *	function to check the email exist in our database
+	 */
+	public static function checkEmail($email) {
+		if($email != '') {
+			$db 		= new Db();
+			$condition 	= "u_email ='".$email."'";
+            $uid 	= $db->selectRow('user', 'u_id ',$condition );
+			return $uid;
+		}
+	}
+	
+	
 }
 ?>

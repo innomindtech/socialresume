@@ -38,6 +38,13 @@ function echopre1($printArray) {
 	echo "</pre>";
 	exit();
 }
+
+	/*
+	 *	function to show the success/error message into browser
+	 */
+	function outputmessage($msg, $class) {
+		return '<div role="alert" class="alert alert-'.$class.'"> '.$msg.'</div>';
+	}
  
 
 ?>

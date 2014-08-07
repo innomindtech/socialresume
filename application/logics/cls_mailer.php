@@ -24,9 +24,8 @@ class Mailer{
 	public function  __construct() {
 		// common parameters
 		$this->siteName 		= SITE_NAME;
-		$this->siteLogo 		= '<img src="'. BASE_URL.'images/emailogo.png">';
-		$this->siteCopyRight 	= ' <strong>&copy; THRNPRF '.date('Y').'</strong><br>
-                <a style="color:#222222; text-decoration:none;" target="_blank" href="'.BASE_URL.'"> www.THRNPRF.com</a>';
+		$this->siteLogo 		= 'Logo';
+		$this->siteCopyRight 	= '  ';
 		$this->siteDate 		= date("F j, Y, g:i a");
 		$this->mailSignature 	= '<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#333333">Thank You,<br>
 The THRNPRF Team | '.BASE_URL.'</p>';
@@ -58,15 +57,15 @@ The THRNPRF Team | '.BASE_URL.'</p>';
     	$emailBody 				= $this->prepareMail($mailTemplate->mail_template_body);  
     	
     	// Need to convert this to dynamic
-        $adfromemail       		= Util::getSettings('admin_mail');
-        $adfromemailname      	= Util::getSettings('admin_email_from_name');
-        $adreplyemail         	= Util::getSettings('admin_mail');
-        $adreplyemailname     	= Util::getSettings('admin_email_from_name');
+        $adfromemail       		= 'jinson@innomindtech.com';
+        $adfromemailname      	= 'Jinson';
+        $adreplyemail         	= 'jinson@innomindtech.com';
+        $adreplyemailname     	= 'jinson';
           
 		$mailBody   			= $emailBody;
 		
-		//if($replaceparams['SHOW_MAIL'] == 1)
-		//	echopre($mailBody);
+		if($replaceparams['SHOW_MAIL'] == 1)
+			echopre($mailBody);
 		
        	$mailSubject 			= str_replace('{SITE_NAME}', $this->siteName, $mailTemplate->mail_template_sub);
        

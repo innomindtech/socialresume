@@ -19,10 +19,17 @@
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="<?php echo BASE_URL; ?>application/helpers/js/jquery.validate.js"></script>
+<script src="<?php echo BASE_URL; ?>application/helpers/js/jquery.validate.js"></script>
 	
-		<script src="<?php echo BASE_URL; ?>application/helpers/js/validations.js"></script>
- 
+<script src="<?php echo BASE_URL; ?>application/helpers/js/validations.js"></script>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script language="javascript">
 var BASE_URL = "<?php echo BASE_URL;?>";
 </script>
@@ -31,12 +38,12 @@ var BASE_URL = "<?php echo BASE_URL;?>";
 <!--[if lt IE 7]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
- 
-	 
+ <div class="container theme-showcase" role="main">
+	 <?php echo  $this->load->view('header');?>
 	
 	 <?php echo $content_for_layout;?>
 	
-	  
+	  </div>
 
 </body>
 </html>

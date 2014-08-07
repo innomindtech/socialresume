@@ -44,6 +44,6 @@ var BASE_URL = "<?php echo BASE_URL;?>";
 	 <?php echo $content_for_layout;?>
 	
 	  </div>
-
+		
 </body>
 </html>

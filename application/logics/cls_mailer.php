@@ -28,7 +28,7 @@ class Mailer{
 		$this->siteCopyRight 	= '  ';
 		$this->siteDate 		= date("F j, Y, g:i a");
 		$this->mailSignature 	= '<p style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#333333">Thank You,<br>
-The THRNPRF Team | '.BASE_URL.'</p>';
+Site | '.BASE_URL.'</p>';
 		include_once 'application/libraries/phpmailer/class.phpmailer.php';
 		
 	}
@@ -56,6 +56,7 @@ The THRNPRF Team | '.BASE_URL.'</p>';
     	
     	$emailBody 				= $this->prepareMail($mailTemplate->mail_template_body);  
     	
+		//TODO: make it dynamic
     	// Need to convert this to dynamic
         $adfromemail       		= 'jinson@innomindtech.com';
         $adfromemailname      	= 'Jinson';

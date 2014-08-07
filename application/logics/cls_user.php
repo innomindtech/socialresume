@@ -4,6 +4,7 @@
 // +----------------------------------------------------------------------+
 // | File name : cls_user.php                                      		  |
 // | PHP version >= 5.2                                                   |
+// | Created by = Jinson on 08/07/14                                      |
 // | This class is for using the user functions                           |
 // +----------------------------------------------------------------------+ 
 // +----------------------------------------------------------------------+
@@ -15,6 +16,11 @@
 // | webdesign etc.                                                       |
 // +----------------------------------------------------------------------+
 
+
+/*
+ *	This class is used for the user mangament function
+ *
+ */
 class User {
 
 		  
@@ -29,7 +35,6 @@ class User {
 			$db 		= new Db();
 			$condition 	= "u_email ='".$uanme."' AND u_pwd ='".$upwd."'";
             $userInfo 	= $db->selectRecord('user', '*',$condition );
-	 
             return $userInfo;
 		}
 		
@@ -54,8 +59,8 @@ class User {
 	 */	
 	public static function addEmailInfo($data) {
 		$data['ls_date'] 	= date('Y-m-d H:i:s');
-		$db 		= new Db();
-		$postedId	= $db->addFields('sendlist',$data);
+		$db 				= new Db();
+		$postedId			= $db->addFields('sendlist',$data);
 		return $postedId;
 	}	
 		  
@@ -123,7 +128,6 @@ class User {
 				$delStatus 	= $db->deleteRecord('entry',$condition );
 				return true;
 			}
-			
 		}
 	}
 	
@@ -135,7 +139,7 @@ class User {
 		if($email != '') {
 			$db 		= new Db();
 			$condition 	= "u_email ='".$email."'";
-            $uid 	= $db->selectRow('user', 'u_id ',$condition );
+            $uid 		= $db->selectRow('user', 'u_id ',$condition );
 			return $uid;
 		}
 	}
